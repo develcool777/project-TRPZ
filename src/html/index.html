@@ -1,0 +1,41 @@
+{% extends "./layouts/template.html" %}
+{% set title = "Hotel - Home" %}
+{% block content %}
+	<main class="main1">
+		<div class="box">
+			<div class="main1__block1">
+				<div class="main1__block1_first">ENJOY A LUXURY</div>
+				<div class="main1__block1_second">EXPERIENCE</div>
+			</div>
+			<form class="main1__block2 formfind">
+				<div class="formfind__item">
+					<div class="formfind__title">Arrive</div>
+					<div class="formfind__box down">
+						<input class="formfind__date" type="date" name="date[arrive]" id="arrive-1" />
+					</div>
+				</div>
+				<div class="formfind__item">
+					<div class="formfind__title">Out</div>
+					<div class="formfind__box down">
+						<input class="formfind__date" type="date" name="date[out]" id="out-1" />
+					</div>
+				</div>
+				<div class="formfind__item formfind__item_none">
+					<div class="formfind__title">Guest</div>
+					<div class="formfind__box down">
+						<select class="formfind__select">
+							<option value="">--How many quests?--</option>
+							<option value="1 quest">1 quest</option>
+							<option value="2 quest">2 quest</option>
+							<option value="3 quest">3 quest</option>
+							<option value="4 quest">4 quest</option>
+						</select>
+					</div>
+				</div>
+				<a class="formfind__link" href="#">
+					<div class="formfind__item3 down">CHECK</div>
+				</a>
+			</form>
+		</div>
+	</main>
+{% endblock %}

@@ -1,0 +1,25 @@
+<header class="header">
+	<div class="box">
+		<div class="header__panel">
+			<div class="header__cap">
+				<a class="header__link" href="#">
+					<div class="header__logo">Riviera Estate</div>
+					<div class="header__logo_span">LUXURY HOTEL</div>
+				</a>
+			</div>
+			<nav class="menu">
+				<div><a href="/" class="menu__link">Home</a></div>
+				<div><a href="/rooms.html" class="menu__link">Rooms</a></div>
+				<div><a href="/booking.html" class="menu__link">Booking</a></div>
+				<div><a href="/news.html" class="menu__link ">Our news</a></div>
+				<div><a href="#" class="menu__link menu__call">Contacts</a></div>
+				{% if !auth %}
+					<div><a href="#" class="menu__link menu__signup">Sign up</a></div>
+					<div><a href="#" class="menu__link menu__log">Log in</a></div>
+				{% else %}
+					<div><a href="#" class="menu__link menu__acc">Account</a></div>
+				{% endif %}
+			</nav>
+		</div>
+	</div>
+</header>
