@@ -1,0 +1,7 @@
+{
+	"port": 7777,
+	"files": ["./trg/**/*.{html,htm,css,js}"],
+	"server": {
+		"baseDir": "./trg"
+	}
+}

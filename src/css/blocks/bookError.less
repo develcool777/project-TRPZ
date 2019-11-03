@@ -1,0 +1,36 @@
+.bookerror {
+	&__title {
+		font-size: @18;
+		font-weight: normal;
+		position: relative;
+		margin-top: @50; 
+	}
+	&__title:after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 1px;
+		display: block;
+		z-index: 19;
+		background-color: @black;
+		bottom: -@5;
+	}
+	&__box {
+		margin: @70 0 @140 0;
+		position: relative;		
+	}
+	&__box:after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 1px;
+		display: block;
+		z-index: 19;
+		background-color: @black;
+		bottom: -@90;
+	}
+
+	&__item {
+		margin: 0 0 @30 @50;
+	}
+} 

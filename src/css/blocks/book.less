@@ -1,0 +1,97 @@
+.book {
+	&__title {
+		font-size: @18;
+		font-weight: normal;
+		position: relative;
+		margin-top: @20;
+		margin-bottom: @45;
+	}
+	&__title:after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 1px;
+		display: block;
+		z-index: 19;
+		background-color: @black;
+		bottom: -@5;
+	}
+	&__link, &__link:visited {
+		text-decoration: none;
+	}
+	&__coop {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-bottom: @45;
+	}
+	&__coop:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: @black;
+		display: block;
+		z-index: 2;
+		bottom: -@45;
+
+	}
+	&__item1 {
+		width: @426;
+		height: @285;
+	}
+	&__item2 {
+		width: @700;
+	}
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		font-weight: normal;
+		align-items: center;
+		&_first {
+			font-size: @22;
+		}
+		&_second {
+			align-items: center;
+			font-size: @24;
+			display: flex;
+			justify-content: space-between;
+			width: @200;
+			&-button {
+				border: 1px solid @black;
+				border-radius: @4;
+				background-color: @black;
+				color: @white;
+				padding: @5 @15; 
+				text-transform: uppercase;
+			}
+			&-button:hover {
+				box-shadow: @10 @10 @20 @black;
+				background-color: @white;
+				color: @black;	
+				transition: .1s;			
+			}
+		}
+	}
+	&__block2 {
+		display: flex;
+		justify-content: space-between;
+		width: @130;
+		font-size: @15;
+		margin-bottom: @5;
+		&_first {
+			font-weight: bold;
+		}
+	}
+	&__check {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: @400;
+		margin: @10 0 @10;
+	}
+	&__text {
+		font-size: @15;
+		width: @500;
+	}
+}

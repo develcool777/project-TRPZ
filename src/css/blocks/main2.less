@@ -1,0 +1,76 @@
+.main2 {
+	padding: @30 0;
+	&__title {
+		padding: 0 0 @20 0;
+		font-size: @24;
+		font-weight: normal;
+		text-align: center;
+	}
+	&__block {
+		position: relative;
+		margin: 0 0 @25 0;
+	}
+	&__block:not(:last-child):after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		// bottom: -@25;
+		background-color: #aaaaaa;
+		z-index: 100;
+		display: block;
+	}
+	&__coop {
+		padding: 0 0 @15 0; 
+		display: flex;
+		justify-content: space-between;
+	}
+	&__class {
+		font-size: @22;
+		font-weight: normal;
+	}
+	&__but {
+		font-size: @22;
+		text-transform: uppercase;
+		background-color: black;
+		color: @white;
+		border: 1px solid black;
+		border-radius: @4;
+		padding: @5 @20;
+	}
+	&__but:hover {
+		box-shadow: @10 @10 @20 @black;
+		transition: .1s;
+		color: black;
+		background-color: @white;
+	}
+	&__buts {
+		text-decoration: none;
+	}
+	&__img {
+		height: @680;
+	}
+	&__sub {
+		padding: @25 0;
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+	}
+	&__text {
+		width: 70%;
+		font-size: @15;
+	}
+	&__capasity {
+		width: 15%;
+		font-size: @15;
+		display: flex;
+		justify-content: space-between;
+		&_block1 {
+			text-align: left;	
+		}	
+		&_block2 {
+			text-align: center;
+		}
+	}
+
+}

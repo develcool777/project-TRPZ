@@ -1,0 +1,77 @@
+.modal3 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: fade(@black, 80%); //@black
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_hidden {
+    display: none;
+  }
+  .popup {
+    width: @350;
+    height: @215;
+    background-color: @gray;
+  }
+  .block1 {
+    background-color: @blacky;
+    color: white;
+    font-size: @24;
+    font-family: Times New Roman;
+    font-weight: normal;
+    height: @50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block2 {
+    margin: @20 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__cap {
+      padding: 0 @15;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_down {
+        margin-top: @10;
+      }
+    }
+    &__label {
+      font-size: @24;
+      font-weight: normal;
+    }
+
+    &__input {
+      background-color: @white;
+      width: @200;
+      height: @30;
+    }
+    &__but {
+      display: flex;
+      justify-content: flex-end;
+      width: 94%;
+      margin-top: @15;
+    }
+    &__sub {
+      border: none;
+      font-size: @24;
+      font-weight: normal; 
+      padding: @5 @15;
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+    }
+    &__sub:hover {
+      box-shadow: 5px 5px 10px black;
+      color: black;
+      background-color: white;
+    }
+  }
+}

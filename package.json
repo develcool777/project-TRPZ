@@ -1,0 +1,27 @@
+{
+	"name": "project",
+	"version": "1.0.0",
+	"main": "script.js",
+	"scripts": {
+		"start": "npx lite-server",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"fs": "0.0.1-security",
+		"path": "^0.12.7",
+		"swig": "^1.4.2"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-less": "^4.0.1",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-swig": "^0.9.1",
+		"lite-server": "^2.5.4"
+	},
+	"keywords": [],
+	"description": ""
+}

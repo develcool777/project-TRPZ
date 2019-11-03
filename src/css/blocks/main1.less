@@ -1,0 +1,29 @@
+.main1 {
+	height: @710;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../../img/main1/back2.png");
+	&__block1 {
+		height: @120;
+		margin: @120 0 0 0;
+		font-size: @50;
+		font-weight: normal;
+		text-shadow: 2px 2px 1px @black;
+		color: white;
+		&_second, &_first{
+			text-align: center;
+		}
+	}
+	&__block2 {
+		padding: 0 @15;
+		margin: @140 auto 0;
+		background-color: @black;
+		width: @860;
+		height: @85;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+@import "./formfind";

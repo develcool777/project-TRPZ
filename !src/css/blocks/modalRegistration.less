@@ -1,0 +1,80 @@
+.modal1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: fade(@black, 80%); //@black
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_hidden {
+    display: none;
+  }
+  .popup {
+    font-family: sans-serif;
+    width: @200;
+    &__title {
+      margin-bottom: @40;
+      &_text {
+        color: @white;
+        font-size: @40;
+        width: @120;
+        position: relative;
+      }
+      &_text:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: @green;
+        z-index: 2;
+        bottom: -7px;
+      }
+    }
+    &__textbox {
+      position: relative;
+      margin-bottom: @10;  
+      background: transparent;
+      &_text {
+        border: none;
+        outline: none;
+        color: @white;
+        font-size: @18;
+        width: 80%;
+      }
+    }
+    &__textbox:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: @green;
+      z-index: 2;
+      bottom: -2px;  
+    }
+
+    &__btn {
+      width: 100%;
+      background: none;
+      border: 2px solid @green;
+      color: @white;
+      padding: 5px @10;
+      margin-top: @50;
+      cursor: pointer;
+      font-size: @18;
+    }
+    &__btn:hover {
+      border-color: @greenlight;
+    }
+
+    &__icon {
+      width: @15;
+      color: @white;
+      text-align: center;
+    }
+  }
+}
