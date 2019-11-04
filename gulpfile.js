@@ -19,9 +19,9 @@ const debug = (options = {}) => $debug({
 	...options,
 });
 const dump = ({
-	path,
-	content
-} = {
+			path,
+			content
+		} = {
 	path: true,
 	content: false,
 }) => $through.obj((file, encoding, next) => {
