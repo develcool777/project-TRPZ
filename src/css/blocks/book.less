@@ -12,7 +12,7 @@
 		width: 100%;
 		height: 1px;
 		display: block;
-		z-index: 19;
+		// z-index: 19;s
 		background-color: @black;
 		bottom: -@5;
 	}
@@ -32,15 +32,19 @@
 		height: 1px;
 		background-color: @black;
 		display: block;
-		z-index: 2;
+
 		bottom: -@45;
 
 	}
 	&__item1 {
+		border-radius: 5px;
+		background-image: url(../../img/book/1.png);
+		background-size: cover;
 		width: @426;
 		height: @285;
 	}
 	&__item2 {
+		padding-left: @15;
 		width: @700;
 	}
 	&__block {
@@ -87,11 +91,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		width: @400;
+		// width: @400;
 		margin: @10 0 @10;
 	}
 	&__text {
 		font-size: @15;
-		width: @500;
+		// width: @500;
 	}
 }
