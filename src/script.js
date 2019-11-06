@@ -100,6 +100,30 @@ window.addEventListener('load', () => {
 					.classList.toggle('modal4_hidden', true);
 			}
 		);
+  [
+    ...document
+      .querySelectorAll('.menu__lan')
+  ].map(button =>
+		button.addEventListener(
+			'click', event => {
+				event.preventDefault();
+				document
+					.querySelector('.modal5')
+					.classList.toggle('modal5_hidden');
+			}
+		)
+	);
+	document
+		.querySelector('.modal5')
+		.addEventListener(
+			'click', event => {
+				event.preventDefault();
+				if (!event.target.classList.contains('modal5')) return;
+				document
+					.querySelector('.modal5')
+					.classList.toggle('modal5_hidden', true);
+			}
+		);
 	// arrive-1 / out-1
 	const arrive_out_1 = (id, property) => (event) => {
 		const {

@@ -1,0 +1,99 @@
+.modal5 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: fade(@black, 50%); //@black
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_hidden {
+    display: none;
+  }
+  .popup {
+    border-radius: 5px;
+    font-family: sans-serif;
+    // width: @200;
+    padding: @20;
+    background-color: fade(@white, 85%); //@black
+    &__title {
+      text-transform: uppercase;
+      margin-bottom: @10;
+      font-family: bold;
+    }
+    &__lan {
+      margin-bottom: @5;
+    }
+    &__textbox {
+      position: relative;
+      width: @80;
+      height: @30;
+      border-radius: 50px;
+      background-color: #333;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.2);
+      margin-bottom: @20;
+      &_text {
+        visibility: hidden;
+      }
+      &_label {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: @4;
+        left: @4;
+        z-index: 1;
+        width: @22;
+        height: @22;
+        background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100% );
+        border-radius: 50px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.4s;
+
+      }
+      &_label:after {
+        content: "";
+        position: absolute;
+        width: @10;
+        height: @10;
+        top: @6;
+        left: @6;
+        border-radius: 50px;
+        background-color: #333;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.9), 0 1px 0 rgba(255, 255, 255, 0.8);
+      }
+    }
+    &__textbox:after {
+      content: "";
+      position: absolute;
+      background-color: #333;
+      top: @14;
+      left: @14;
+      height: 2px;
+      width: @52;
+      border-radius: 50px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    &__btn {
+      width: 100%;
+      background: none;
+      border: 2px solid @black;
+      color: @black;
+      padding: @5 @10;
+      margin-top: @30;
+      cursor: pointer;
+      font-size: @18;
+    }
+    &__btn:hover {
+      border-color: @greenlight;
+    }
+    &__textbox_text:checked + &__textbox_label {
+      left: @54;
+    }
+   }
+  .popup:hover {
+    box-shadow: 10px 10px 20px @black;
+    transition: 0.5s;    
+  }
+}
