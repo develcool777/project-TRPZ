@@ -3,7 +3,7 @@
 ------------
 
 
-**To run project:**
+## To run project:
 - `git clone`
 - `npm i` in your console
 - `node app.js` in your console
