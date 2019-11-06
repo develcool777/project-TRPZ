@@ -2,5 +2,5 @@ node_modules/
 /photoshop
 /trg/
 .DS_Store
-
-
+ssh
+ssh.pub
