@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hotel - Home</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body><header class="header">
+	<div class="box">
+		<div class="header__panel">
+			<div class="header__cap">
+				<a class="header__link" href="index.html">
+					<div class="header__logo">Riviera Estate</div>
+				</a>
+			</div>
+			<nav class="menu">
+				<div><a href="/index.html" class="menu__link">Home</a></div>
+				<div><a href="/rooms.html" class="menu__link">Rooms</a></div>
+				<div><a href="/booking-error.html" class="menu__link">Booking</a></div>
+				<div><a href="/news.html" class="menu__link ">Our news</a></div>
+				<div><a href="#" class="menu__link menu__call">Contacts</a></div>
+				
+					<div><a href="#" class="menu__link menu__acc">Account</a></div>
+				
+				<div class="menu__link menu__lan">Language</div>
+			</nav>
+		</div>
+	</div>
+</div>
+</header>
+	<main class="main1">
+		<div class="box">
+			<div class="main1__block1">
+				<div class="main1__block1_first">ENJOY A LUXURY</div>
+				<div class="main1__block1_second">EXPERIENCE</div>
+			</div>
+			<form class="main1__block2 formfind">
+				<div class="formfind__item">
+					<div class="formfind__title">Arrive</div>
+					<div class="formfind__box down">
+						<input class="formfind__date" type="date" name="date[arrive]" id="arrive-1" />
+					</div>
+				</div>
+				<div class="formfind__item">
+					<div class="formfind__title">Out</div>
+					<div class="formfind__box down">
+						<input class="formfind__date" type="date" name="date[out]" id="out-1" />
+					</div>
+				</div>
+				<div class="formfind__item formfind__item_none">
+					<div class="formfind__title">Guest</div>
+					<div class="formfind__box down">
+						<select class="formfind__select">
+							<option value="">--How many quests?--</option>
+							<option value="1 quest">1 quest</option>
+							<option value="2 quest">2 quest</option>
+							<option value="3 quest">3 quest</option>
+							<option value="4 quest">4 quest</option>
+						</select>
+					</div>
+				</div>
+				<a class="formfind__link" href="booking.html">
+					<div class="formfind__item3 down">CHECK</div>
+				</a>
+			</form>
+		</div>
+	</main>
+
+		
+		<div class="modal4 modal4_hidden">
+	<form  action="" class="popup">
+		<div class="popup__textbox">
+			<label for="1" class="popup__textbox_label">Email</label>
+			<input type="email" id="1" placeholder="ivanov@icloud.com" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<label for="2" class="popup__textbox_label">Name</label>
+			<input type="text" name="Phone number" id="2" placeholder="Ivan" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<label for="3" class="popup__textbox_label">Surname</label>
+			<input type="text" name="Phone number" id="3" placeholder="Ivanov" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<label for="4" class="popup__textbox_label">Passport ID</label>
+			<input type="text" name="Phone number" id="4" placeholder="00003456" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<label for="5" class="popup__textbox_label">Phone number</label>
+			<input type="tel" name="Phone number" id="5" placeholder="0665212750" class="popup__textbox_text">
+		</div>
+		<input type="button" class="popup__btn" value="Save changes">
+		<input type="button" class="popup__btn" value="Cancel">
+		<div class="block">
+			<div class="block__title">
+				<h4 class="block__title_h4">Current booking</h4>
+			</div>
+			<table class="block__table">
+				<tr class="block__tr">
+					<th class="block__headers">Date</th>
+					<th class="block__headers">Type of room</th>
+					<th class="block__headers">Guests</th>
+					<th class="block__headers">Price</th>
+				</tr>
+				<tr class="block__tr">
+					<td class="block__info">04.10.19-19.10.19</td>
+					<td class="block__info">Standart</td>
+					<td class="block__info">1</td>
+					<td class="block__info">75$</td>
+				</tr>
+			</table>
+		</div>
+		<input type="button" class="popup__btn" value="Log out">
+	</form>
+</div><div class="modal3 modal3_hidden">
+	<form action="" class="popup">
+		<div class="popup__title">
+			<h4 class="popup__title_text">Call back</h4>
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="text" name="Name" placeholder="Name" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-lock popup__icon" aria-hidden="true"></i>
+			<input type="tel" name="Phone number" placeholder="Phone number" class="popup__textbox_text">
+		</div>
+		<input type="button" class="popup__btn" value="Submit">
+	</form>
+</div><div class="modal2 modal2_hidden">
+	<form action="" class="popup">
+		<div class="popup__title">
+			<h4 class="popup__title_text">Sign up</h4>
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="text" name="Name" placeholder="Name" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="text" name="surname" placeholder="Surname" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="email" name="email" placeholder="Email" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="tel" name="phone number" placeholder="Phone number" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fas fa-passport popup__icon" aria-hidden="true"></i>
+			<input type="text" name="passport id" placeholder="Passport ID" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-lock popup__icon" aria-hidden="true"></i>
+			<input type="password" name="pasword" placeholder="Pasword" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-lock popup__icon" aria-hidden="true"></i>
+			<input type="password" name="confirm password" placeholder="Confirm Password" class="popup__textbox_text">
+		</div>
+		<input type="button" class="popup__btn" value="Sign in">
+	</form>
+</div><div class="modal1 modal1_hidden">
+	<form action="" class="popup">
+		<div class="popup__title">
+			<h4 class="popup__title_text">Login</h4>
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-user popup__icon" aria-hidden="true"></i>
+			<input type="text" name="email" placeholder="Email" class="popup__textbox_text">
+		</div>
+		<div class="popup__textbox">
+			<i class="fa fa-lock popup__icon" aria-hidden="true"></i>
+			<input type="password" name="password" placeholder="Password" class="popup__textbox_text">
+		</div>
+		<input type="button" class="popup__btn" value="Sign in">
+	</form>
+</div><div class="modal5 modal5_hidden">
+	<form  action="" class="popup">
+		<div class="popup__title">Language</div>
+		<div class="popup__lan">English</div>
+		<div class="popup__textbox">
+			<input type="checkbox" id="1" class="popup__textbox_text">
+			<label for="1" class="popup__textbox_label"></label>
+		</div>
+		<div class="popup__lan">Russian</div>
+		<div class="popup__textbox">
+			<input type="checkbox" id="1" class="popup__textbox_text">
+			<label for="1" class="popup__textbox_label"></label>
+		</div>
+		<div class="popup__lan">Ukranian</div>
+		<div class="popup__textbox">
+			<input type="checkbox" id="1" class="popup__textbox_text">
+			<label for="1" class="popup__textbox_label"></label>
+		</div>
+		
+		<input type="button" class="popup__btn" value="Submit">
+	</form>
+</div><footer class="footer">
+	<div class="box">
+		<div class="footer__blocks">
+			<div class="footer__block1">Hotel Riviera Estate,2019<br>Official cite</div>
+			<div class="footer__block2">Chicago,Illinois,Oak Street 567</div>
+			<div class="footer__block3">
+				<div class="footer__img"><img src="/img/footer/phone-call.png" alt="phone"></div>
+				<div class="footer__phone">+7 288 392 832</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</body>
+	</h
