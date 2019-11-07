@@ -105,8 +105,8 @@ $gulp.task('asset:watch', task_watch_asset);
 
 
 // https://www.npmjs.com/package/gulp-swig
-const src_html = './src/htmlEN/*.html';
-const src_watch_html = './src/htmlEN/**/*.html';
+const src_html = './src/html/*.html';
+const src_watch_html = './src/html/**/*.html';
 const trg_html = './trg/';
 const html = () => $gulp.src(src_html)
 	.pipe(debug({
