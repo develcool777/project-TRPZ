@@ -4,17 +4,9 @@
 		font-weight: normal;
 		position: relative;
 		margin-top: @20;
-		margin-bottom: @45;
+		// margin-bottom: @45;
 	}
-	&__title:after {
-		position: absolute;
-		content: "";
-		width: 100%;
-		height: 1px;
-		display: block;
-		background-color: @black;
-		bottom: -@5;
-	}
+
 	&__link, &__link:visited {
 		text-decoration: none;
 	}
@@ -22,7 +14,15 @@
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		margin-bottom: @45;
+		margin: @45 0;
+	}
+	&__coop:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: @black;
+		top: -@45;
 	}
 	&__coop:after {
 		content: "";
@@ -30,10 +30,7 @@
 		width: 100%;
 		height: 1px;
 		background-color: @black;
-		display: block;
-
 		bottom: -@45;
-
 	}
 	&__item1 {
 		border-radius: 5px;

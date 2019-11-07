@@ -1,0 +1,26 @@
+<header class="header">
+	<div class="box">
+		<div class="header__panel">
+			<div class="header__cap">
+				<a class="header__link" href="index.html">
+					<div class="header__logo">Riviera Estate</div>
+				</a>
+			</div>
+			<nav class="menu">
+				<div><a href="/index.html" class="menu__link">Головна</a></div>
+				<div><a href="/rooms.html" class="menu__link">Кімнати</a></div>
+				<div><a href="/booking.html" class="menu__link">Бронювання</a></div>
+				<div><a href="/news.html" class="menu__link ">Наші новини</a></div>
+				<div><a href="#" class="menu__link menu__call">Контакти</a></div>
+				{% if !auth %}
+					<div><a href="#" class="menu__link menu__signup">Реєстрація</a></div>
+					<div><a href="#" class="menu__link menu__log">Вхід</a></div>
+				{% else %}
+					<div><a href="#" class="menu__link menu__acc">Акаунт</a></div>
+				{% endif %}
+				<div class="menu__link menu__lan">Мова</div>
+			</nav>
+		</div>
+	</div>
+</div>
+</header>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ title | default('Гостиница') }}</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		{%- block header -%}
+		{% include "../partials/layouts/header.html" with { auth: false } only ignore missing %}
+		{%- endblock %}
+		{%- block content -%}
+		
+		{%- endblock %}
+		
+		{% include "../partials/modal/account.html" ignore missing -%}
+		{% include "../partials/modal/callback.html" ignore missing -%}
+		{% include "../partials/modal/sign-up.html" ignore missing -%}
+		{% include "../partials/modal/log-in.html" ignore missing -%}
+		{% include "../partials/modal/language.html" ignore missing -%}
+		
+		{%- block footer -%}
+		{% include "../partials/layouts/footer.html" ignore missing %}
+		{%- endblock %}
+	</body>
+	</h
